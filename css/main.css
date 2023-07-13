@@ -1,0 +1,48 @@
+section {
+  background-image: url("../img/stripes-blue-leaf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+h2 {
+  letter-spacing: 2px;
+}
+.glass-effect {
+  background: linear-gradient(
+    135deg rgba(225, 225, 225, 0.1),
+    rgba(225, 225, 225, 0)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(225, 225, 225, 0.18);
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+/*media query */
+@media (max-width: 575.98px) {
+  .glass-effect {
+    width: 98% !important;
+    padding: 5px !important;
+    height: 35% !important;
+  }
+
+  h2,
+  h3 {
+    font-size: 16px !important;
+  }
+  .btn {
+    font-size: 16px !important;
+    padding: 0.7rem 0.5rem !important;
+  }
+}
